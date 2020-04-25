@@ -42,15 +42,11 @@ Sprite Cell::display_cell(){
 
 void Cell::set_bomb_number(){bomb_number++;}
 
-void Cell::reveal_cell(){
-    revealed = true;
-}
+void Cell::reveal_cell(){revealed = true;}
 
-void Cell::toggle_flagged(){
-    if (flagged == true)
-        flagged = false;
-    flagged = true;
-}
+void Cell::flag(){flagged = true;}
+
+void Cell::deflag(){flagged = false;}
 
 void Cell::set_bomb(){
     is_bomb = true;
@@ -62,3 +58,5 @@ bool Cell::get_bomb(){return is_bomb;}
 bool Cell::get_revealed(){return revealed;}
 
 int Cell::get_bomb_number(){return bomb_number;}
+
+bool Cell::get_flagged(){return flagged;}

@@ -26,11 +26,13 @@ public:
     sf::Sprite display_cell();
     void set_bomb_number();
     void reveal_cell();
-    void toggle_flagged();
+    void flag();
+    void deflag();
     void set_bomb();
     bool get_bomb();
     bool get_revealed();
     int get_bomb_number();
+    bool get_flagged();
 
 };
 

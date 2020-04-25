@@ -104,13 +104,13 @@ void Gameboard::reveal_cell(int j, int i){
     }
 }
 
-bool Gameboard::toggle_flagged(size_t j, size_t i, int n_flags){
+/*bool Gameboard::toggle_flagged(size_t j, size_t i, int n_flags){
     if(my_board[j].at(i).get_revealed() == false && n_flags > 0){
         my_board[j].at(i).toggle_flagged();
         return true;
     }
     return false;
-}
+}*/
 
 void Gameboard::reveal_all(){
     for(int j=0; j<10; j++){
