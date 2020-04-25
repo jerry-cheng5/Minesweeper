@@ -150,15 +150,10 @@ int get_coords(){
 void print_rules(){
     cout << "\n===================================================" << endl;
     cout << "\nRules:" << endl;
-    cout << "\nThe dealer will deal two random cards to you and two random cards to themselves. ";
-    cout << "One of these cards will be showing, while the other will only be visible to the person that the cards belong to. ";
-    cout << "The objective of the game is to have the sum of your cards equal 21, or as close as you can get to it. ";
-    cout << "You win if your sum is closer to 21 than the dealer. You lose if it is further. ";
-    cout << "However, there is a catch; if your sum is above 21, you lose automatically. Same goes for the dealer. ";
-    cout << "Each turn you have two options: Hit - recieve a random card, or Stand - keep your cards. ";
-    cout << "All the numbered cards have a value of their corresponding numbers, and the Jack is worth 11, the Queen is worth 12, and the King is worth 13. ";
-    cout << "The Ace can be either 1 or 11. The suits of the cards do not matter for the game, and this game will be using a standard 52-card deck." << endl;
-}
+    cout << "\nTo win, you have to reveal all the tiles except the ones with bombs. You can determine if the tile is a bomb with the numbers on the adjacent tiles. ";
+    cout << "These numbers represent the number of bombs that tile is touching. Diagonally touching counts as touching. ";
+    cout << "There are 10 bombs in total, and therefore you have 10 flags so you can mark where you think the bombs are." << endl;
+    cout << "\nHave fun!" << endl;
 
 void print_score(){
     cout << "\nThe score is:" << endl;
